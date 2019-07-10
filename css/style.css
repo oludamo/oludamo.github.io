@@ -13,6 +13,7 @@ html {
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
 	height: 100%;
+	scroll-behavior: smooth;
 }
 body {
 	margin: 0;
@@ -2296,7 +2297,7 @@ section.single-content-section {
 }
 .policy-box {
 	float:left;
-	text-align:left;
+	text-align:center;
 	font-size:10px;
 	letter-spacing:1px;
 	text-transform:uppercase;
@@ -2304,6 +2305,7 @@ section.single-content-section {
 	position:relative;
 	top:12px;
 	color: #999;
+	width: 100%;
 }
 .to-top-btn {
 	font-size:10px;
@@ -2404,7 +2406,7 @@ section.single-content-section {
 	position:relative;
     padding-bottom: 20px;
 	margin-bottom:40px;
-	border-bottom:1px solid #eee;
+	/*border-bottom:1px solid #eee;*/
 }
 .section-title h3 {
 	text-align: left;
@@ -2420,9 +2422,9 @@ section.single-content-section {
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		font-size: 11px;
-		line-height: 20px;
+		line-height: 26px;
 		font-weight: 400;
-	color:#999;
+	color:#000;
 	/*max-width:400px;*/
 	text-align:center;
 }
@@ -3973,13 +3975,40 @@ section {
 
 
 #sec1 {
-	padding: 30px 0 90px !important;
+	padding: 70px 0 40px !important;
 }
+.mail-link {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 11px;
+	line-height: 20px;
+	font-weight: 400;
+	color:#000;
+}
+.mail-link:hover {
+	color:#999;
+}
+.socials {
+	margin: 50px auto 0px;
+	display: flex;
+	justify-content: center;
+}
+.socials a {
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 100%;
+	background: #000000;
+	color: #fff;
+	font-size: 13px;
+	display: block;
+}
+
+
+/* Custom Stories CSS*/
 body.stories .mobile-stories-container {
 	display: none;
 }
-
-/* Custom Stories CSS*/
 h2.stories-info {
 	letter-spacing: 2px;
 	text-align: center !important;
@@ -3989,9 +4018,9 @@ h2.stories-info {
 	padding-bottom: 20px;
 }
 p.stories-info {
-	font-size: 11px;
-	font-weight: 400;
-	color: #999;
+	font-size: 12px;
+	font-weight: 300;
+	color: #000;
 	text-align: center;
 	line-height: 24px;
 	padding-bottom: 10px;
@@ -4022,26 +4051,37 @@ p.stories-info::after {
 body.stories .mobile-stories-pag {
 	display: none;
 }
-@media only screen and (max-width: 640px) {
 
+@media only screen and (max-width: 640px) {
+	#sec1 {
+		padding: 30px 0 40px !important;
+	}
+	body.stories #wrapper {
+		padding-top: 45px;
+	}
 	body.stories .mobile-stories-container  {
 	  overflow-x: scroll;
 	  overflow-y: hidden;
 	  white-space: nowrap;
-	  min-height: calc(100vh - 90px);
+		height: 100%;
+	  /*min-height: calc(100vh - 90px);*/
 	  display: flex;
 	}
 	body.stories .story-image-container {
     display:inline-flex;
     align-items: center;
     width: 100vw !important;
-    min-height: calc(100vh - 90px);
+    /*min-height: calc(100vh - 90px);*/
     flex-shrink:0;
     margin-top: -90px;
     padding:0 .5rem;
 	}
 	body.stories .story-image-container img {
     width: 100%;
+		margin: 0 auto;
+	}
+	body.stories .story-image-container img.portrait-mode {
+    max-width: 75% !important;
 	}
 	body.stories .mobile-stories-details {
 		width: 100vw !important;
@@ -4054,7 +4094,7 @@ body.stories .mobile-stories-pag {
 		margin: 35px auto !important;
 	}
 	body.stories .mobile-stories-pag {
-		margin-top: -25px;
+		margin-top: -43px;
 		padding: 15px 35px;
 		padding-right: 35px;
 		cursor: pointer;
@@ -4067,6 +4107,9 @@ body.stories .mobile-stories-pag {
 		text-transform: uppercase;
 		font-weight: 400;
 		display: block;
+		position: fixed;
+		width: 100%;
+		bottom: 0;
 	}
 
 }

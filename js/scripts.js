@@ -638,6 +638,11 @@
              $(".gallery-filters").slideToggle(100);
          }
      });
+     $(".gallery-filter").on("click", function() {
+         if ($(window).width() < 1064) {
+             $(".gallery-filters").slideToggle(100);
+         }
+     });
      function n() {
          if ($(".gallery-items").length) {
              var $grid = $(".gallery-items").isotope({
