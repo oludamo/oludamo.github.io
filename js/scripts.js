@@ -640,7 +640,7 @@
      });
      $(".gallery-filter").on("click", function() {
          if ($(window).width() < 1064) {
-             $(".gallery-filters").slideToggle(100);
+             $(".gallery-filters").delay(750).slideToggle(100);
          }
      });
      function n() {
