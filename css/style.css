@@ -4110,6 +4110,9 @@ body.stories .mobile-stories-pag {
 	#sec1 {
 		padding: 0px !important;
 	}
+	.film .box-media-zoom {
+		opacity: 1;
+	}
 	body.stories #wrapper {
 		padding-top: 45px;
 	}
