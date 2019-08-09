@@ -5,8 +5,8 @@
   Theme: Kotlis Photography - Creative  Responsive Photography  Template
   Version: 1.0
   Last change: 01/02/2019 ]
-/*-------------Fonts---------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Ek+Mukta:200,300,400,500,600,700,800&subset=devanagari,latin-ext');
+/*-------------Fonts---------------------------------------
+@import url('https://fonts.googleapis.com/css?family=futura-pt+Display|Ek+Mukta:200,300,400,500,600,700,800&subset=devanagari,latin-ext');
 /*-------------General Style---------------------------------------*/
 
 html {
@@ -321,7 +321,7 @@ blockquote p {
 	font-size:12px;
 	color:#666;
  	font-weight:100;
-    font-family: 'Playfair+Display', serif;
+    font-family: 'futura-pt+Display', serif;
     font-style: italic;
 	opacity:0;
 	visibility:hidden;
@@ -2241,7 +2241,7 @@ blockquote p {
 	position:absolute;
 	top:-10px;
 	font-size:14px;
-    font-family: 'Playfair+Display', serif;
+    font-family: 'futura-pt+Display', serif;
 	color:#666;
 	font-style:italic;
 	font-weight:700;
@@ -2428,7 +2428,7 @@ section.single-content-section {
 	background:#fff;
 }
 .column-title h3 {
-    font-family: 'Playfair+Display', serif;
+    font-family: 'futura-pt+Display', serif;
     font-style: italic;
 	color:rgba(255,255,255,0.91);
 	max-width:400px;
@@ -2602,7 +2602,7 @@ section.single-content-section {
 	color:rgba(255,255,255,0.71);
 }
 .serv-price span {
-    font-family: 'Playfair+Display', serif;
+    font-family: 'futura-pt+Display', serif;
 	font-style:italic;
 	color:#fff;
 }
@@ -2667,7 +2667,7 @@ section.single-content-section {
 	padding:35px 20px 25px;
 	background:#f9f9f9;
 	border:1px solid #eee;
-    font-family: 'Playfair+Display', serif;
+    font-family: 'futura-pt+Display', serif;
 	font-style:italic;
 	color:#999;
 	font-size:14px;
