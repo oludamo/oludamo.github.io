@@ -676,6 +676,12 @@
      }
      n();
      //   lightGallery------------------
+     $(".video-popup").lightGallery({
+         selector: "this",
+         cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
+         download: false,
+         counter: false
+     });
      $(".image-popup").lightGallery({
          selector: "this",
          cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",

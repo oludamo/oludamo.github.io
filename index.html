@@ -19,7 +19,7 @@
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
     </head>
-    <body>
+    <body class="film">
         <!--loader-->
         <div class="loader-wrap">
             <div class="spinner">
@@ -44,6 +44,12 @@
                 <div class="nav-holder main-menu">
                     <nav>
                         <ul>
+                          <li>
+                              <a href="index.html" class="act-link">FILM</a>
+                          </li>
+                          <li>
+                              <a href="photo.html">PHOTOGRAPY</a>
+                          </li>
                             <li>
                                 <a href="#">PHOTO-STORIES</a>
                                 <!--second level -->
@@ -65,140 +71,127 @@
             <!-- wrapper  -->
             <div id="wrapper">
                 <!-- content -->
-                <div class="content full-height hor-content hor-content_padd">
-                    <!-- slider-counter_wrap-->
-                    <div class="slider-counter_wrap">
+                <div class="content">
+                    <!-- bottom-filter-wrap -->
+                    <div class="bottom-filter-wrap hor-filter-wrap">
+                        <!--<div class="scroll-down-wrap">
+                            <div class="mousey">
+                                <div class="scroller"></div>
+                            </div>
+                            <span>Scroll down to discover</span>
+                        </div>-->
+                        <div class="filter-title">Filters <i class="fal fa-long-arrow-right"></i></div>
+                        <div class="gallery-filters">
+                            <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All</a>
+                            <a href="#" class="gallery-filter" data-filter=".brands">BRANDED CONTENT</a>
+                            <a href="#" class="gallery-filter" data-filter=".musicvideo">MUSIC VIDEO</a>
+                        </div>
                         <div class="count-folio round-counter">
                             <div class="num-album"></div>
                             <div class="all-album"></div>
                         </div>
                     </div>
-                    <!-- slider-counter_wrap end -->
-                    <!-- bottom-filter-wrap -->
-                    <div class="bottom-filter-wrap">
-                        <div class="filter-title">Filters <i class="fal fa-long-arrow-right"></i></div>
-                        <div class="gallery-filters">
-                            <a href="#" class="gallery-filter  gallery-filter-active" data-filter="*">All</a>
-                            <a href="#" class="gallery-filter" data-filter=".stories">STORIES</a>
-                            <a href="#" class="gallery-filter" data-filter=".portrait">PORTRAITS</a>
-                            <a href="#" class="gallery-filter" data-filter=".travel">TRAVEL</a>
-                            <a href="#" class="gallery-filter" data-filter=".landscape">LANDSCAPE</a>
-                        </div>
-                    </div>
                     <!-- bottom-filter-wrap end -->
-                    <!--horizontal-grid   -->
-                    <div class="horizontal-grid-wrap  fl-wrap full-height ">
+                    <div class="ff_panel-conainer fl-wrap">
                         <!-- portfolio start -->
-                        <div   id="portfolio_horizontal_container" class="one-ver-columns lightgallery no-scale-img">
-
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item stories">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/endgame.jpg"    alt="">
-                                    <a href="contact.html" class="box-media-zoom"><i class="fal fa-search"></i></a>
+                        <div class="gallery-items big-padding   two-column fl-wrap vis-thumb-info lightgallery">
+                            <!-- gallery-item-->
+                            <div class="gallery-item brands">
+                                <div class="grid-item-holder hov_zoom">
+                                    <div class="film-container">
+                                      <img  src="images/film/bevelhints.jpg" alt="">
+                                      <a href="https://vimeo.com/194423018" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
+                                    </div>
                                     <div class="thumb-info">
-                                        <h3><a href="endgame.html">PHOTO-STORY: END-GAME</a></h3>
+                                        <h3>Christmas Hints</h3>
+                                        <p>Bevel</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item portrait">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/keyla.jpg"    alt="">
-                                    <a href="images/folio/keyla.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-                                </div>
-                            </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item portrait">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/simona.jpg"    alt="">
-                                    <a href="images/folio/simona.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-
-                                </div>
-                            </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item travel landscape">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/stgermain-church.jpg"    alt="">
-                                    <a href="images/folio/stgermain-church.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-
-                                </div>
-                            </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item stories">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/loveatwar.jpg"    alt="">
-                                    <a href="contact.html" class="box-media-zoom"><i class="fal fa-search"></i></a>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item brands">
+                                <div class="grid-item-holder hov_zoom">
+                                  <div class="film-container">
+                                    <img  src="images/film/beveltellme.jpg"    alt="">
+                                    <a href="https://vimeo.com/200940839" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
+                                  </div>
                                     <div class="thumb-info">
-                                        <h3><a href="loveatwar.html">PHOTO-STORY: LOVE AT WAR</a></h3>
+                                        <h3>Tell Me</h3>
+                                        <p>Bevel</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item travel">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/paris-alexandre.jpg"    alt="">
-                                    <a href="images/folio/paris-alexandre.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item brands">
+                                <div class="grid-item-holder hov_zoom">
+                                  <div class="film-container">
+                                    <img  src="images/film/bevelconspiracy.jpg"    alt="">
+                                    <a href="https://vimeo.com/194188237" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
+                                  </div>
+                                    <div class="thumb-info">
+                                        <h3>Christmas Conspiracy</h3>
+                                        <p>Bevel</p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item landscape">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/capetown-lambo.jpg"    alt="">
-                                    <a href="images/folio/capetown-lambo.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item brands">
+                                <div class="grid-item-holder hov_zoom">
+                                  <div class="film-container">
+                                    <img  src="images/film/bevelpower.jpg"    alt="">
+                                    <a href="https://vimeo.com/188051637" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
+                                  </div>
+                                    <div class="thumb-info">
+                                        <h3>Power of the Haircut</h3>
+                                        <p>Bevel</p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item portrait">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/donnica.jpg"    alt="">
-                                    <a href="images/folio/donnica.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item musicvideo">
+                                <div class="grid-item-holder hov_zoom">
+                                  <div class="film-container">
+                                    <img  src="images/film/pennyp4t.jpg"    alt="">
+                                    <a href="https://vimeo.com/256013956" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
+                                  </div>
+                                    <div class="thumb-info">
+                                        <h3>P4T</h3>
+                                        <p>Pennyforthought</p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item nature portrait">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/arejeigh.jpg"    alt="">
-                                    <a href="images/folio/arejeigh.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-
+                            <!-- gallery-item end-->
+                            <!-- gallery-item-->
+                            <div class="gallery-item musicvideo">
+                                <div class="grid-item-holder hov_zoom">
+                                  <div class="film-container">
+                                    <img  src="images/film/detmonday.jpg"    alt="">
+                                    <a href="https://vimeo.com/183933522" class="box-media-zoom   popup-image"><i class="fal fa-play"></i></a>
+                                  </div>
+                                    <div class="thumb-info">
+                                        <h3>Monday</h3>
+                                        <p>Detonator</p>
+                                    </div>
                                 </div>
                             </div>
-                            <!-- portfolio_item end-->
-                            <!-- portfolio_item-->
-                            <div class="portfolio_item outdoor travel">
-                                <div class="grid-item-holder">
-                                    <img  src="images/folio/capetown-safari.jpg"    alt="">
-                                    <a href="images/folio/capetown-safari.jpg" class="box-media-zoom   popup-image"><i class="fal fa-search"></i></a>
-
-                                </div>
-                            </div>
-                            <!-- portfolio_item end-->
-
+                            <!-- gallery-item end-->
 
                         </div>
                         <!-- portfolio end -->
                     </div>
-                    <!--horizontal-grid end -->
                 </div>
                 <!--content end-->
-                <!--share-wrapper--
+                <!--share-wrapper-->
                 <div class="share-wrapper">
                     <div class="share-container fl-wrap  isShare"></div>
                 </div>
                 <!--share-wrapper end-->
             </div>
             <!-- wrapper end -->
-            <div class="hiiden-sidebar-wrap outsb"></div>
             <!-- cursor--
             <div class="element">
                 <div class="element-item"></div>

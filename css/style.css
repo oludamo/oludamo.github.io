@@ -874,6 +874,12 @@ blockquote p {
     font-size: 16px;
     font-weight: 700;
 }
+.film .vis-thumb-info .thumb-info h3{
+    font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-size: 15px;
+}
 .vis-thumb-info .thumb-info p{
 	float: left;
     width: 100%;
@@ -881,8 +887,21 @@ blockquote p {
     text-align: left;
     font-weight: 700;
     font-size: 12px;
-    font-family: 'Playfair+Display', serif;
+    font-family: 'futura-pt', arial, sans-serif;
     font-style: italic;
+	opacity:1;
+}
+.film .vis-thumb-info .thumb-info p{
+	float: left;
+    width: 100%;
+    color: #292929;
+    text-align: left;
+    font-weight: 300;
+    font-size: 12px;
+    font-family: 'futura-pt', arial, sans-serif;
+    font-style: normal;
+		text-transform: uppercase;
+		letter-spacing: 2px;
 	opacity:1;
 }
 .fsc-holder {
@@ -1080,11 +1099,39 @@ blockquote p {
 	-webkit-transition: all 200ms linear;
 	transition: all 200ms linear;
 }
+.film .box-media-zoom {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	opacity: 0;
+ 	transform: scale(1);
+	color: #fff;
+	font-size:40px;
+	background: rgba(0,0,0,0.2);
+	border-radius:0;
+	z-index: 5;
+	cursor:pointer;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-shadow: 0 0 7px rgba(255, 255, 255, 0.8);
+}
+.film .film-container {
+	position: relative;
+}
 .swiper-link-wrap .box-media-zoom {
 	right:130px
 }
 .gallery-item:hover .fet_pr-carousel-box-media-zoom , .hov_zoom:hover .box-media-zoom  {
 	transform: scale(1);
+}
+.film .hov_zoom:hover .box-media-zoom  {
+	opacity:1;
 }
 .hov_zoom {
 	overflow:hidden;
@@ -1892,7 +1939,7 @@ blockquote p {
 .count-folio {
 	float:left;
 	padding:11px 25px;
-	background:#292929;
+	background:#000000;
 	color:#fff;
 	margin-left:80px;
 	position:relative;
@@ -4004,6 +4051,13 @@ section {
 	display: block;
 }
 
+
+
+/*.video-popup:after	 {
+	content: url(../images/playhead.png);
+	display: block;
+	height: 70px;
+}
 
 /* Custom Stories CSS*/
 body.stories .mobile-stories-container {
