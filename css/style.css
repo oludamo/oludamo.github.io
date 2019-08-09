@@ -4102,7 +4102,7 @@ p.stories-info::after {
 	font-weight: 400;
 	display: inline-block;
 }
-body.stories .mobile-stories-pag {
+body.stories .mobile-stories-pag, .lg-actions {
 	display: none;
 }
 

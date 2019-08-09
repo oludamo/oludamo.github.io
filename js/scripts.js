@@ -679,6 +679,7 @@
      $(".video-popup").lightGallery({
          selector: "this",
          cssEasing: "cubic-bezier(0.25, 0, 0.25, 1)",
+         controls: false,
          download: false,
          counter: false
      });
