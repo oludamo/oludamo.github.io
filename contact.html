@@ -125,7 +125,7 @@
                                 <div class="footer-inner fl-wrap">
                                     <!-- policy-box-->
                                     <div class="policy-box">
-                                        <span>&#169; 2018 - 2020 OLUDAMO. All rights reserved. </span>
+                                        &#169; 2018 - <span class="year"></span> OLUDAMO. All rights reserved.
                                     </div>
                                     <!-- policy-box end-->
                                     <!--<a href="#" class="to-top-btn to-top">Back to top <i class="fal fa-long-arrow-up"></i></a>-->
@@ -157,6 +157,9 @@
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript">
+          $(".year").text( (new Date).getFullYear() );
+        </script>
         <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
